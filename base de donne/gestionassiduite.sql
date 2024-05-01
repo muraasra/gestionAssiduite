@@ -196,6 +196,9 @@ INSERT INTO `etudiant` (`matricule_etd`, `nom_etd`, `classe`) VALUES
 ('GL.CMR.B031.2223B', 'TSASSE TATANG', 'niveau2'),
 ('GL.CMR.B033.2223B', 'WELMANDAI DOUFERIE', 'niveau2');
 
+insert into surveillant (matricule_sur, nom_sur, cle_sur) VALUES('SU.CMR.A001.1617', 'FOTSO MARCUS', 'surveillant00');
+
+insert into enseignant (matricule_ens, nom_ens, cle_ens) VALUES('EN.CMR.A001.1617', 'MBAM FREDDY', 'enseignant00');
 
 
 
