@@ -11,22 +11,26 @@ let block2 = document.getElementById("block2");
 let block3 = document.getElementById("block3");
 
 //fonction de gestion des evenements
-function togg(){
+ etat.addEventListener('click', () => {
 
-  if(getComputedStyle(block1).display != "none"){
-    block2.style.display = "none";
-    block3.style.display = "none";
-  }
-  if(getComputedStyle(block2).display != "none"){
-    block1.style.display = "none";
-    block3.style.display = "none";
-  }
-  if(getComputedStyle(block3).display != "none"){
-    block2.style.display = "none";
-    block1.style.display = "none";
-  }
-};
+  block1.style.display= "block";
+  block2.style.display = "none";
+  block3.style.display = "none";
 
-etat.onclick = togg;
-verif.onclick = togg;
-modif.onclick= togg; 
+ });
+
+ verif.addEventListener('click', () => {
+
+  block2.style.display= "block";
+  block1.style.display = "none";
+  block3.style.display = "none";
+
+ });
+
+ modif.addEventListener('click', () => {
+
+  block3.style.display= "block";
+  block2.style.display = "none";
+  block1.style.display = "none";
+
+ });
