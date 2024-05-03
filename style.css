@@ -28,7 +28,7 @@ body
     position: relative;
     display: flex;
     align-items: center;
-    background-color: rgba(5, 1, 20, 0.678);
+    background: rgba(5, 1, 20, 0.678);
     height: 10%;
     width: 100%;
 
@@ -86,7 +86,7 @@ body
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: rgba(5, 1, 20, 0.678);
+    background: rgba(5, 1, 20, 0.678);
     width: 15%;
     height: 100%;
     overflow: hidden;
@@ -103,7 +103,11 @@ body
     height: 75px;
     background-color: transparent;
     margin-top: 1.5rem;
-    border: none;
+    border-left: 1px solid #55608f;
+    border-bottom: 1px solid #55608f;
+    box-shadow: 12px 2px 2px #55608f;
+    border-top: none;
+    border-right: none;
     transition: all 0.3s ease-in-out;
     text-align: center;
     color: #fff;
@@ -170,7 +174,6 @@ button img
     flex-direction: column;
     width: 90%;
     height: 100%;
-    background-color: #5f2c82;
     border-radius: 5px;
 
 }
@@ -257,18 +260,20 @@ tbody {
 
 /* responsive page*/
 
-@media screen and (max-width: 1429px)  {
+@media screen and (max-width: 1450px)  {
     
     .vertical-header-containt .pp-img
     {
-        height: 140px;
-        width: 140px;
+        height: 60px;
+        width: 60px;
         margin-bottom: 74px;
-        margin-top: 100%;
+        margin-top: 3%;
     }
     .text-details
     {
         margin-left: 10px;
+        font-size: 1em;
+        top: 0;
     }
     .horizontal-header-containt> .button
     {
@@ -276,6 +281,7 @@ tbody {
         height: 55px;
         margin-top: 4%;
         bottom: 0;
+        left: 0;
 
     }
     
@@ -318,7 +324,7 @@ tbody {
         bottom: 0;
         font-size: 1em;
         text-align: center;
-        padding-left: 10%;
+        padding-left: 1%;
         font-size: 0.99em;
         width: 70px;
 
